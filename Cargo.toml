@@ -31,12 +31,11 @@ http = "1.0"
 base64 = "0.21.0"
 tracing = { version = "0.1.36", optional = true }
 pem = { version = "1.0.2", optional = true }
-ring = { version = "0.16.20", features = ["std"], optional = true }
+ring = { version = "0.17.0", features = ["std"], optional = true }
 hyper-util = { version = "0.1.3", features = ["client", "http2", "client-legacy", "tokio"] }
 http-body-util = "0.1.1"
 hyper-rustls = { version = "0.26.0", default-features = false, features = ["http2", "webpki-roots", "ring"] }
 rustls = "0.22.0"
-webpki-roots = "0.26.1"
 rustls-pemfile = "2.1.1"
 
 [dev-dependencies]
