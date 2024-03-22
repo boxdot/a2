@@ -77,7 +77,6 @@ impl<'a> Payload<'a> {
 
     /// Combine the APS payload and the custom data to a final payload JSON.
     /// Returns an error if serialization fails.
-    #[allow(clippy::wrong_self_convention)]
     pub fn to_json_string(mut self) -> Result<String, Error> {
         let aps_data = serde_json::to_value(&self.aps)?;
 

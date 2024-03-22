@@ -63,8 +63,7 @@
 //! ```no_run
 //! # #[cfg(all(feature = "openssl", not(feature = "ring")))]
 //! # {
-//! #[macro_use] extern crate serde;
-//!
+//! use serde::Serialize;
 //! use a2::{
 //!     Client, Endpoint, SilentNotificationBuilder, NotificationBuilder, NotificationOptions,
 //!     Priority,
